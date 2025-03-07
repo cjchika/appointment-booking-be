@@ -6,16 +6,16 @@ An Appointment Booking System (Backend) -A  Case Study for Alpha Global
 [Github Link for Frontend](https://github.com/cjchika/appointment-booking-fe)
 
 ## Tech Stack
-### Frontend: React (Typescript)
-### Styling: Tailwind, MUI
-### Backend: Nodejs (ExpressJS)
-### Database: MySQL
-### ORM: Sequelize
+#### Frontend: React (Typescript)
+#### Styling: Tailwind, MUI
+#### Backend: Nodejs (ExpressJS)
+#### Database: MySQL
+#### ORM: Sequelize
 
 ## Deployment
-### Frontend: Surge
-### Backend: AWS EC2
-### Database: AWS RDS
+#### Frontend: Surge
+#### Backend: AWS EC2
+#### Database: AWS RDS
 
 ## How to run
 
@@ -110,11 +110,11 @@ docker-compose down
 [SQL Dump File](https://github.com/cjchika/appointment-booking-be/blob/main/bookingdb.sql)
 
 ## Reasons why I chose this approach
-It gives other developer the options to run the app either manually or with Docker, for developers who already have experience with containerization, they can easily run one command, fire up many services, and start working without wasting time on configuration.
--
-Tech Stacks - Every project has its own requirements - except it's a hobby project and you just want to learn new technologies, developer can choose what to work with.
--
-Deployment - None of the suggested platforms worked for me, I used what I'm familiar with - AWS Cloud.
+- It gives other developer the options to run the app either manually or with Docker, for developers who already have experience with containerization, they can easily run one command, fire up many services, and start working without wasting time on configuration.
+
+- Tech Stacks - Every project has its own requirements - except it's a hobby project and you just want to learn new technologies, developer can choose what to work with.
+
+- Deployment - None of the suggested platforms worked for me, I used what I'm familiar with - AWS Cloud.
 
 ## How the conflict-handling logic works
 The appointment booking doesn't allow multiple booking for a particular time-frame in a given date, only a user with the role of an admin can access/manage appointment bookings, proper UI feedback is displayed to respective users to allow for a better UX experience. Most of this logic are implemented with the help of the Sequelize ORM.
@@ -153,3 +153,9 @@ src\
  |--index.js        # App entry point
 ```
 
+### Some Screenshots
+[Screenhot 1](https://github.com/cjchika/appointment-booking-be/blob/main/src/screenshots/SC1.png)
+
+[Screenhot 2](https://github.com/cjchika/appointment-booking-be/blob/main/src/screenshots/SC2.png)
+
+[Screenhot 3](https://github.com/cjchika/appointment-booking-be/blob/main/src/screenshots/SC3.png)
