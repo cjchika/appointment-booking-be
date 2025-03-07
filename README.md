@@ -4,7 +4,7 @@ An Appointment Booking System (Backend) - Case Study for Alpha Global
 
 ## Manual Installation
 
-Clone the repo:
+Clone the repo: git@github.com:cjchika/appointment-booking-be.git
 
 ```bash
 git clone

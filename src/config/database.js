@@ -31,5 +31,8 @@ module.exports = {
     dialectOptions: {
       bigNumberStrings: true,
     },
+    dialectOptions: {
+      connectTimeout: 60000,
+    },
   },
 };
