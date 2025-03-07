@@ -28,6 +28,7 @@ module.exports = {
     host: config.dbHost,
     port: config.port,
     dialect: "mysql",
+    logging: false,
     dialectOptions: {
       bigNumberStrings: true,
     },
