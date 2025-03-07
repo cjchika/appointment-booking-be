@@ -56,7 +56,6 @@ DB_USER=db-user
 DB_PASS=db-pass
 DB_NAME=db-name
 
-
 # JWT secret key
 JWT_SECRET=your-jwt-secret-key
 # Number of minutes after which an access token expires
