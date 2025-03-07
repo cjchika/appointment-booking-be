@@ -1,14 +1,29 @@
 # Appointment Booking System
 
-An Appointment Booking System (Backend) - Case Study for Alpha Global
+An Appointment Booking System (Backend) -A  Case Study for Alpha Global
 
-## Manual Installation
+### Frontend Source Code
+[Github Link for Frontend](https://github.com/cjchika/appointment-booking-fe)
 
-Clone the repo: git@github.com:cjchika/appointment-booking-be.git
+## Tech Stack
+### Frontend: React (Typescript)
+### Styling: Tailwind, MUI
+### Backend: Nodejs (ExpressJS)
+### Database: MySQL
+### ORM: Sequelize
+
+## Deployment
+### Frontend: Surge
+### Backend: AWS EC2
+### Database: AWS RDS
+
+## How to run
+
+Clone the repo:
 
 ```bash
-git clone
-cd
+git clone git@github.com:cjchika/appointment-booking-be.git
+cd appointment-booking-be
 ```
 
 Install the dependencies:
@@ -23,43 +38,6 @@ Set the environment variables:
 cp .env.example .env
 
 # open .env and modify the environment variables (if needed)
-```
-
-
-## Features
-
-- **ORM**: [Sequelize](https://sequelize.org/)  orm for object data modeling
-- **Migration and Seed**: DB migration and Seed using [Sequelize-CLI](https://github.com/sequelize/cli)
-- **Authentication and authorization**: using [passport](http://www.passportjs.org)
-- **Error handling**: centralized error handling
-- **Validation**: request data validation using [Joi](https://github.com/hapijs/joi)
-- **Testing**: unittests using [Mocha](https://mochajs.org/)
-- **Dependency management**: with [Yarn](https://yarnpkg.com)
-- **Environment variables**: using [dotenv](https://github.com/motdotla/dotenv) and [cross-env](https://github.com/kentcdodds/cross-env#readme)
-- **CORS**: Cross-Origin Resource-Sharing enabled using [cors](https://github.com/expressjs/cors)
-- **Docker support**
-- **Linting**: with [ESLint](https://eslint.org) and [Prettier](https://prettier.io)
-
-## Commands
-
-Running locally:
-
-```bash
-yarn dev
-```
-
-Running in production:
-
-```bash
-yarn start
-```
-
-Testing:
-
-```bash
-# run all tests
-yarn test
-
 ```
 
 ## Environment Variables
@@ -88,6 +66,75 @@ JWT_REFRESH_EXPIRATION_DAYS=30
 
 ```
 
+You can run this backend project locally in two ways;
+
+### 1 -> Manual Installation
+
+### Commands
+
+Running locally:
+
+```bash
+yarn dev
+```
+
+Testing:
+
+```bash
+# run all tests
+yarn test
+
+```
+
+### 2 -> Run with Docker
+
+There are three services :-
+
+1: The backend app
+2: MySQL
+3: MyPHPAdmin - To manage the database
+
+The following command brings all three services up;
+
+```bash
+docker-compose up -d
+```
+
+When you're done - run;
+
+```bash
+docker-compose down
+```
+
+### Database Dump File
+[SQL Dump File](https://github.com/cjchika/appointment-booking-be/blob/main/bookingdb.sql)
+
+## Reasons why I chose this approach
+It gives other developer the options to run the app either manually or with Docker, for developers who already have experience with containerization, they can easily run one command, fire up many services, and start working without wasting time on configuration.
+-
+Tech Stacks - Every project has its own requirements - except it's a hobby project and you just want to learn new technologies, developer can choose what to work with.
+-
+Deployment - None of the suggested platforms worked for me, I used what I'm familiar with - AWS Cloud.
+
+## How the conflict-handling logic works
+The appointment booking doesn't allow multiple booking for a particular time-frame in a given date, only a user with the role of an admin can access/manage appointment bookings, proper UI feedback is displayed to respective users to allow for a better UX experience. Most of this logic are implemented with the help of the Sequelize ORM.
+
+
+## Features
+
+- **ORM**: [Sequelize](https://sequelize.org/)  orm for object data modeling
+- **Migration and Seed**: DB migration and Seed using [Sequelize-CLI](https://github.com/sequelize/cli)
+- **Authentication and authorization**: using [passport](http://www.passportjs.org)
+- **Error handling**: centralized error handling
+- **Validation**: request data validation using [Joi](https://github.com/hapijs/joi)
+- **Testing**: unittests using [Mocha](https://mochajs.org/)
+- **Dependency management**: with [Yarn](https://yarnpkg.com)
+- **Environment variables**: using [dotenv](https://github.com/motdotla/dotenv) and [cross-env](https://github.com/kentcdodds/cross-env#readme)
+- **CORS**: Cross-Origin Resource-Sharing enabled using [cors](https://github.com/expressjs/cors)
+- **Docker support**
+- **Linting**: with [ESLint](https://eslint.org) and [Prettier](https://prettier.io)
+
+
 ## Project Structure
 
 ```
@@ -106,6 +153,3 @@ src\
  |--index.js        # App entry point
 ```
 
-## License
-
-[MIT](LICENSE)
