@@ -6,16 +6,16 @@ An Appointment Booking System (Backend) -A  Case Study for Alpha Global
 [Github Link for Frontend](https://github.com/cjchika/appointment-booking-fe)
 
 ## Tech Stack
-#### Frontend: React (Typescript)
-#### Styling: Tailwind, MUI
-#### Backend: Nodejs (ExpressJS)
-#### Database: MySQL
-#### ORM: Sequelize
+- Frontend: React (Typescript)
+- Styling: Tailwind, MUI
+- Backend: Nodejs (ExpressJS)
+- Database: MySQL
+- ORM: Sequelize
 
 ## Deployment
-#### Frontend: Surge
-#### Backend: AWS EC2
-#### Database: AWS RDS
+- Frontend: Surge
+- Backend: AWS EC2
+- Database: AWS RDS
 
 ## How to run
 
