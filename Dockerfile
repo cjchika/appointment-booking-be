@@ -14,7 +14,4 @@ COPY . .
 
 EXPOSE 5000
 
-# FOR PRODUCTION
-# CMD [ "node", "src/index.js" ]
-
 CMD ["./wait-for-it.sh", "dbsvc:3306", "--", "node", "src/index.js" ]
