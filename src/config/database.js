@@ -29,6 +29,12 @@ module.exports = {
     port: config.port,
     dialect: "mysql",
     logging: false,
+    pool: {
+      max: 10, // Increase max connections
+      min: 1,
+      acquire: 30000, // 30 seconds timeout
+      idle: 10000, // 10 seconds before closing idle connection
+    },
     dialectOptions: {
       bigNumberStrings: true,
     },
